@@ -1,0 +1,44 @@
+#comment;===============converter-technologies============================================
+#blockwise
+#code;ROR;#name;ROR;#input;WATER;#output;electric_energy;#bidirectional;false;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;1
+cost;#type;DVP_linear;#data;2016-01-01_00:00;5542857.14
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;60.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.21058772460177574
+#endblock
+#code;PV1;#name;PV1;#input;SOLAR_RADIATION;#output;electric_energy;#bidirectional;false;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;1
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1490000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;30.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.12732175947210578
+#endblock
+#code;PV2;#name;PV2;#input;SOLAR_RADIATION;#output;electric_energy;#bidirectional;false;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;1
+cost;#type;DVP_linear;#data;2016-01-01_00:00;530000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;30.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.16389299676328498
+#endblock
+#code;BAT1POWER;#name;BAT1POWER;#input;electric_energy;#output;battery_energy;#bidirectional;true;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;0.97
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1238800.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;16.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0
+#endblock
+#code;PH_TURBINE;#name;PH_TURBINE;#input;electric_energy;#output;hydro_energy;#bidirectional;true;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;0.75
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1500000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;50.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.20701119441050964
+#endblock
+#code;WIND_OFF;#name;WIND_OFF;#input;WIND_OFF;#output;electric_energy;#bidirectional;false;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;1
+cost;#type;DVP_linear;#data;2016-01-01_00:00;2714000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;25.4
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.23262752266803957
+#endblock
+#code;WIND_ONS;#name;WIND_ONS;#input;WIND_ONS;#output;electric_energy;#bidirectional;false;#comment;this is a comment
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;1
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1288000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;25.4
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.21190335257065668
+#endblock

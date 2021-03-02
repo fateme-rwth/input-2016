@@ -1,0 +1,10 @@
+#code;Baltic;#name;Baltic
+demand_electric_dyn;#type;TS_repeat_const;#interval;1h;#start;2016-01-01_00:00;#data_source_path;./TimeSeries/Baltic/demand_elec.csv
+demand_electric_per_a;#type;DVP_linear;#data;2016-01-01_00:00;0
+#primary_energy;#code;CO2
+potential;#type;TBD_lookupTable;#data_source_path;./TimeSeries/PrimaryEnergyUnlimited_minusOne.csv
+#primary_energy;#code;WIND_OFF
+potential;#type;TBD_lookupTable;#data_source_path;./TimeSeries/Baltic/Baltic_WIND_OFF.csv
+#converter;#code;WIND_OFF
+installation;#type;DVP_const;#data;2016-01-01_00:00;338.8;2017-01-01_00:00;0
+#endblock

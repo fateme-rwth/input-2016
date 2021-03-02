@@ -1,0 +1,14 @@
+#comment;===============storage-technologies============================================
+#blockwise
+#code;Battery_Energy_storage;#name;Battery_Energy_storage;#input;Battery_Energy;#output;Battery_Energy
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;0.97
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1238800.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;16.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0
+#endblock
+#code;PH_storage;#name;PH_storage;#input;hydro_energy;#output;hydro_energy
+efficiency_new;#type;DVP_linear;#data;2016-01-01_00:00;0.75
+cost;#type;DVP_linear;#data;2016-01-01_00:00;1500000.0
+lifetime;#type;DVP_linear;#data;2016-01-01_00:00;50.0
+OaM_rate;#type;DVP_linear;#data;2016-01-01_00:00;0.20701119441050964
+#endblock
